@@ -10,16 +10,17 @@
 
 
 ### 🔑 Keywords:
->* WhiteBall = are the 5 numbers in the Game
->* PowerBall = The last number in the Game
+>* WhiteBall = The 5 numbers in the Ticket
+>* PowerBall = The last numbers in the Ticket
 >* Style.RESET_ALL = Resets foreground, background, and brightness used on our coding 
 >* Fore.RED = This will make the Printout color(RED) 
 >* Fore.RESET = Reset to default color used 
 >* Fore.BACK = To make a Background color on printout
->* emojize = converting Unicode emoji to emoji names
->* random.randint = returns an integer number in list
->* random.sample = returns a list with a random selection of a specified number of items from a list.
->* append = adds an item to the end of the list
+>* emojize = Converting Unicode emoji to emoji names
+>* random.randint = Returns an integer number in list
+>* random.sample = Returns a list with a random selection of a specified number of items from a list.
+>* append = Adds an item to the end of the list
+
 
 ## **🖨️ How does This Powerball Project Work?**
 * The Powerball works differently from the real one like Mega Millions to get more chances to get favorite results. 

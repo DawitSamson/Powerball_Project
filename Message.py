@@ -9,11 +9,11 @@ import emoji
 # Fore.Back = To make a Background color on printout
 
 def Welcome_Text():
-    print("\n", Fore.LIGHTGREEN_EX, emojize(':money_bag:') * 20,
+    print("\n", Fore.LIGHTGREEN_EX, emojize(':money_bag:') * 25,
           Fore.BLACK, Style.BRIGHT, Back.LIGHTBLUE_EX, "WELCOME TO", Style.RESET_ALL,
           Fore.BLACK, Style.BRIGHT, Back.LIGHTGREEN_EX, "POWERBALL", Style.RESET_ALL,
           Fore.BLACK, Style.BRIGHT, Back.LIGHTBLUE_EX, "LOTTERY", Style.RESET_ALL,
-          Fore.LIGHTRED_EX, Fore.LIGHTGREEN_EX, emojize(':money_bag:') * 20, Fore.RESET)
+          Fore.LIGHTRED_EX, Fore.LIGHTGREEN_EX, emojize(':money_bag:') * 25, Fore.RESET)
 
 
 def No_ExitText():

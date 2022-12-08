@@ -15,15 +15,15 @@ class Lottery_Balls:
         self.Today_PowerBall = []
         self.Lucky_PowerBall = []
 
-# Rule for Making Random numbers for Today’s Powerball Winning Numbers:
-#    •	The first five numbers (purple) are random numbers drawn from 20 numbers.
-#    •	The first five numbers (purple) should be in ascending order.
-#    •	The Powerball number (gold) is a random number drawn from 10 numbers from 1 to 10.
+    # Rule for Making Random numbers for Today’s Powerball Winning Numbers:
+    #    •	The first five numbers (purple) are random numbers drawn from 20 numbers.
+    #    •	The first five numbers (purple) should be in ascending order.
+    #    •	The Powerball number (gold) is a random number drawn from 10 numbers from 1 to 10.
 
-# Rule for Making Random numbers for Your lucky numbers:
-#    •	The first five numbers (purple) are random numbers drawn from 20 numbers.
-#    •	The first five numbers (purple) should be in ascending order.
-#    •	The Powerball number (gold) is a random number drawn from 10 numbers from 1 to 10.
+    # Rule for Making Random numbers for Your lucky numbers:
+    #    •	The first five numbers (purple) are random numbers drawn from 20 numbers.
+    #    •	The first five numbers (purple) should be in ascending order.
+    #    •	The Powerball number (gold) is a random number drawn from 10 numbers from 1 to 10.
 
     def LotteryNumber_Create(self):
         # Creating a Random Number For Today Whiteball Winning Numbers (Using "Randint Function")
@@ -35,7 +35,7 @@ class Lottery_Balls:
             self.Today_WhiteBall.append(TodayWhiteBall_RandomNumber)
             # Sort the Created list in ascending order
             self.Today_WhiteBall.sort()
-        # Creating a Random Number For Player Lucky Whiteball Numbers (Using "Sample Function") including Ascending order.
+        # Creating a Random Number For Player Lucky Whiteball Numbers (Using "Sample Function")including Ascending order
         LuckyWhiteBall_RandomNumber = sorted(random.sample(range(1, 20), 5))
         self.Lucky_WhiteBall = LuckyWhiteBall_RandomNumber
         # Creating Powerball for Today Winning Number & Player Lucky numbers
@@ -50,25 +50,19 @@ class Display(Lottery_Balls):
         super().__init__()
 
     def Screen_Display(self):
-        # Display The Generated Ball's without index like "[]" or ","
-        Spacing_Todayballs = ""
-        for gap_today in self.Today_WhiteBall:
-            Spacing_Todayballs += str(Fore.LIGHTMAGENTA_EX + f" {gap_today}")
-
+        # Print Powerball Today Winning Numbers
         print("\t\t", Fore.RESET, emojize(':money_bag:') * 40)
-        print(Style.BRIGHT, Fore.CYAN + f"\n\t\t\t\t\t\t\tToday's Powerball Winning Numbers: "
-                                        f"\n\t\t\t\t\t\t\t\t{Spacing_Todayballs}", Style.BRIGHT,
-              Fore.LIGHTYELLOW_EX + str(self.Today_PowerBall[0]))
-        Spacing_Luckyballs = ""
-        for gap_lucky in self.Lucky_WhiteBall:
-            Spacing_Luckyballs += str(Fore.LIGHTMAGENTA_EX + f" {gap_lucky}")
-        print(Style.BRIGHT, Fore.CYAN + f"\t\t\t\t\t\t\tYour Lucky Numbers: "
-                                        f"\n\t\t\t\t\t\t\t\t{Spacing_Luckyballs}",
-              Fore.LIGHTYELLOW_EX + str(self.Lucky_PowerBall[0]), Fore.RESET)
+        print(Style.BRIGHT, Fore.CYAN + f"\n\t\t\t\t\t\t\tToday's Powerball Winning Numbers: ", Fore.LIGHTMAGENTA_EX,
+              f"\n\t\t\t\t\t\t\t\t", *self.Today_WhiteBall, Style.BRIGHT,
+              Fore.LIGHTYELLOW_EX, *self.Today_PowerBall)  # "*" used to remove index like "[]" or ","
+        # Print Lucky Winning numbers
+        print(Style.BRIGHT, Fore.CYAN + f"\n\t\t\t\t\t\t\tYour Lucky Numbers: ", Fore.LIGHTMAGENTA_EX,
+              f"\n\t\t\t\t\t\t\t\t", *self.Lucky_WhiteBall, Style.BRIGHT,
+              Fore.LIGHTYELLOW_EX, *self.Lucky_PowerBall)  # "*" used to remove index like "[]" or ","
         print("\n\t\t", Fore.RESET, (emojize(':money_bag:') * 40), Fore.RESET)
 
     def Counter(self):
-    # Count How Much Correct WhiteBall and PowerBall in the List
+        # Count How Much Correct WhiteBall and PowerBall in the List
         correct_whiteball = 0
         correct_powerball = 0
         # Count Correct Number of WhiteBall on the List
@@ -82,7 +76,7 @@ class Display(Lottery_Balls):
                 if today_p == lucky_p:
                     correct_powerball += 1
 
-    # Conditions to pay the Player based on the Correct number of WhiteBall and PowerBall
+        # Conditions to pay the Player based on the Correct number of WhiteBall and PowerBall
         if correct_whiteball == 5 and correct_powerball == 1:
             print('\t\t\t\t\t\t\tCorrect White Balls and the Powerball:', Fore.LIGHTGREEN_EX, 'Jackpot $324,000,000')
             print('\t\t\t\t\t\t\t', Fore.RED, emojize(':red_heart:') * 2, Fore.RED, emojize(':red_heart:') * 2,

@@ -6,8 +6,8 @@ from colorama import Fore
 # Welcome_Text()
 def Powerball_LotteryTicket():
     Welcome_Text()
-    # Ask the Player to click "ENTER" so that the Ticket can be Genereted
-    Start = input(f"Click {Fore.LIGHTBLUE_EX}'Enter' {Fore.RESET}to play: ")
+    # Ask the Player to click "ENTER" so that the Ticket can be Generated
+    Start = input(f"\n Click {Fore.LIGHTBLUE_EX}'Enter' {Fore.RESET}to play: ")
     while Start == "":
         Ticket()
         Play_again = input(f"\nDo you Want to Play Again? {Fore.LIGHTBLUE_EX}YES/NO: ")
