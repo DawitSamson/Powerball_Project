@@ -125,4 +125,3 @@ def Ticket():
     Lottery_Ticket.Screen_Display()
     Lottery_Ticket.Counter()
 
-

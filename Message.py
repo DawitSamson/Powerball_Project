@@ -8,7 +8,6 @@ import emoji
 # Fore.Reset = reset to default color used
 # Fore.Back = To make a Background color on printout
 
-
 def Welcome_Text():
     print("\n", Fore.LIGHTGREEN_EX, emojize(':money_bag:') * 20,
           Fore.BLACK, Style.BRIGHT, Back.LIGHTBLUE_EX, "WELCOME TO", Style.RESET_ALL,

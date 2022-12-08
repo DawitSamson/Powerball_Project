@@ -10,8 +10,8 @@
 
 
 ### 🔑 Keywords:
->* PowerBall = are the 5 numbers in the Game
->* WhiteBall = The last number in the Game
+>* WhiteBall = are the 5 numbers in the Game
+>* PowerBall = The last number in the Game
 >* Style.RESET_ALL = Resets foreground, background, and brightness used on our coding 
 >* Fore.RED = This will make the Printout color(RED) 
 >* Fore.RESET = Reset to default color used 
