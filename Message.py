@@ -33,3 +33,4 @@ def Invalid_ExitText():
           "\n\t\t\t\t Have a Nice day!!!", Fore.YELLOW, emojize(':handshake: ') * 3, Fore.RESET, )
     print("\n", Fore.GREEN, Style.BRIGHT, (emoji.emojize(':waving_hand:') * 35))
     exit()
+
