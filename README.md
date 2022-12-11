@@ -31,7 +31,7 @@
 
 ## ⚙ HOW TO USE:
 
-* open Pycharm 
+* Open Pycharm 
 * Run the code and click enter. 
 * Will be display Today Winner Number and Lucky Numbers simultaneously Ticket.
 
