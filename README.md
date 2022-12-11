@@ -62,10 +62,9 @@
 >- Importing on PyCharm
 
 # 💻 Source
-- Pycharm softwear
+- Pycharm software
 - GitHub 
 - Google
 
 ### Have Fun!!! ☺️☺️☺️
-
 

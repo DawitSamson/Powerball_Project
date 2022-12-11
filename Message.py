@@ -2,6 +2,7 @@ from colorama import Fore, Style, Back
 from emoji import emojize
 import emoji
 
+
 # ********************Information on Colorama Module********************
 # Style.RESET_ALL = Resets foreground, background, and brightness used on our coding
 # Fore.color = This will make the Printout color
@@ -32,5 +33,3 @@ def Invalid_ExitText():
           "\n\t\t\t\t Have a Nice day!!!", Fore.YELLOW, emojize(':handshake: ') * 3, Fore.RESET, )
     print("\n", Fore.GREEN, Style.BRIGHT, (emoji.emojize(':waving_hand:') * 35))
     exit()
-
-

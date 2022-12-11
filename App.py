@@ -1,5 +1,6 @@
 from Message import Welcome_Text, Invalid_ExitText, No_ExitText
 from Utility import Ticket
+from Condition import Price
 from colorama import Fore
 
 
@@ -10,6 +11,7 @@ def Powerball_LotteryTicket():
     Start = input(f"\n Click {Fore.LIGHTBLUE_EX}'Enter' {Fore.RESET}to play: ")
     while Start == "":
         Ticket()
+        Price()
         Play_again = input(f"\nDo you Want to Play Again? {Fore.LIGHTBLUE_EX}YES/NO: ")
         # Adding Condition for the User to play the Game again.
         if Play_again == "y" or Play_again == "Y" or Play_again == "YES" or Play_again == "yes" or Play_again == "Yes":
